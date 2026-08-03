@@ -6,11 +6,13 @@
     <title>Doğadan Almanya — Doğal Bal, Petek Bal, Kuruyemiş & Lokum</title>
     <meta name="description" content="Türkiye'den Almanya'ya doğal bal çeşitleri, petek bal, kuruyemiş ve lokum gönderimi. İthalat ve satış için iletişime geçin." />
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container">
+      <div class="container header-row">
         <a href="./" class="brand-link" aria-label="Doğadan Almanya">
           <img src="images/logo.svg" alt="Doğadan Almanya" class="brand-logo" width="180" height="56">
           <span class="brand-text">Doğadan Almanya <span class="muted">| Natur aus der Türkei</span></span>
@@ -23,8 +25,9 @@
     </header>
 
     <main class="container">
+      <!-- Hero with background photo that evokes nature -->
       <section class="hero lang-tr">
-        <img class="hero-img" src="images/hero.svg" alt="Arılar ve Bal">
+        <div class="hero-bg" role="img" aria-label="Arılar ve Bal" ></div>
         <div class="hero-copy">
           <h2>Türkiye'nin doğal lezzetleri Almanya'ya</h2>
           <p>Çiçek balı, kekik balı, petek bal ile yüksek kalite kuruyemiş ve geleneksel lokum. Sipariş ve toptan fiyat bilgisi için bizimle iletişime geçin.</p>
@@ -33,7 +36,7 @@
       </section>
 
       <section class="hero lang-de hidden">
-        <img class="hero-img" src="images/hero.svg" alt="Bienen und Honig">
+        <div class="hero-bg" role="img" aria-label="Bienen und Honig"></div>
         <div class="hero-copy">
           <h2>Natürliche Köstlichkeiten aus der Türkei nach Deutschland</h2>
           <p>Blütenhonig, Thymianhonig, Honigwaben sowie hochwertige Nüsse und traditionelles Lokum. Kontaktieren Sie uns für Bestellungen und Großhandelspreise.</p>
@@ -46,7 +49,7 @@
 
         <div class="grid">
           <article class="card">
-            <img src="images/flower.svg" alt="Çiçek Balı" />
+            <img src="https://source.unsplash.com/600x400/?flower,honey" alt="Çiçek Balı" loading="lazy" onerror="this.onerror=null;this.src='images/flower.svg'" />
             <h4 class="lang-tr">Çiçek Balı</h4>
             <h4 class="lang-de hidden">Blütenhonig</h4>
             <p class="lang-tr">Doğal çiçek balı — çeşitli mevsim çiçeklerinden elde edilir. Tat, aroma ve akışkanlık seçenekleri mevcuttur.</p>
@@ -54,7 +57,7 @@
           </article>
 
           <article class="card">
-            <img src="images/thyme.svg" alt="Kekik Balı" />
+            <img src="https://source.unsplash.com/600x400/?thyme,honey,herb" alt="Kekik Balı" loading="lazy" onerror="this.onerror=null;this.src='images/thyme.svg'" />
             <h4 class="lang-tr">Kekik Balı</h4>
             <h4 class="lang-de hidden">Thymianhonig</h4>
             <p class="lang-tr">Aroması güçlü, yöresel kekik balı. Özellikle kahvaltılık ve şifa amaçlı tercih edilir.</p>
@@ -62,7 +65,7 @@
           </article>
 
           <article class="card">
-            <img src="images/honeycomb.svg" alt="Petek Balı" />
+            <img src="https://source.unsplash.com/600x400/?honeycomb" alt="Petek Balı" loading="lazy" onerror="this.onerror=null;this.src='images/honeycomb.svg'" />
             <h4 class="lang-tr">Petek Balı</h4>
             <h4 class="lang-de hidden">Honigwabe</h4>
             <p class="lang-tr">Doğal petek bal; balmumu içinde sunulur. Tağşişsizlik ve doğallığa önem veriyoruz.</p>
@@ -70,7 +73,7 @@
           </article>
 
           <article class="card">
-            <img src="images/nuts.svg" alt="Kuruyemiş" />
+            <img src="https://source.unsplash.com/600x400/?nuts" alt="Kuruyemiş" loading="lazy" onerror="this.onerror=null;this.src='images/nuts.svg'" />
             <h4 class="lang-tr">Kuruyemiş</h4>
             <h4 class="lang-de hidden">Nüsse & Trockenfrüchte</h4>
             <p class="lang-tr">Çiğ/dövülmüş badem, fındık, Antep fıstığı ve karışım paketleri. Toptan ve paket satış.</p>
@@ -78,7 +81,7 @@
           </article>
 
           <article class="card">
-            <img src="images/lokum.svg" alt="Lokum" />
+            <img src="https://source.unsplash.com/600x400/?turkish-delight,lokum" alt="Lokum" loading="lazy" onerror="this.onerror=null;this.src='images/lokum.svg'" />
             <h4 class="lang-tr">Lokum</h4>
             <h4 class="lang-de hidden">Lokum (Türkischer Genuss)</h4>
             <p class="lang-tr">Geleneksel Türk lokumu — gül, fıstık, badem gibi çeşitler.</p>
