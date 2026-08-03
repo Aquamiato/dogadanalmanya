@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60">
-  <rect width="220" height="60" fill="#1f3826"/>
-  <circle cx="34" cy="30" r="20" fill="#d99a2b"/>
-  <path d="M34 19c4.4 0 7.6 4.4 7.6 9S38.4 37 34 37s-7.6-4.4-7.6-9 3.2-9 7.6-9z" fill="#fff8ea"/>
-  <text x="66" y="36" font-family="Merriweather, Georgia, serif" font-size="17" font-weight="700" fill="#fdf8ee">Doğadan Almanya</text>
+  <circle cx="34" cy="30" r="22" fill="#e8a83c"/>
+  <path d="M34 19c4.4 0 7.6 4.4 7.6 9S38.4 37 34 37s-7.6-4.4-7.6-9 3.2-9 7.6-9z" fill="#0a0c07"/>
+  <text x="66" y="36" font-family="Merriweather, Georgia, serif" font-size="17" font-weight="700" fill="#f3f5ee">Doğadan Almanya</text>
 </svg>

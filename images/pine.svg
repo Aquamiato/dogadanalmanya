@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="pineBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e7efe1"/>
+      <stop offset="1" stop-color="#c9dcc0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#pineBg)"/>
+  <g transform="translate(150,60)">
+    <path d="M60,0 L100,70 L82,70 L112,120 L92,120 L124,175 L0,175 L32,120 L12,120 L42,70 L24,70 Z" fill="#2f4f38"/>
+    <path d="M60,40 L92,95 L78,95 L100,130 L84,130 L106,165 L14,165 L36,130 L20,130 L42,95 L28,95 Z" fill="#3f6b4e" opacity="0.85"/>
+    <rect x="48" y="175" width="24" height="34" fill="#5b4229"/>
+  </g>
+  <g transform="translate(340,150)">
+    <ellipse cx="0" cy="0" rx="30" ry="46" fill="#7a4a2b"/>
+    <path d="M-14,-30 Q0,-24 14,-30 M-16,-10 Q0,-4 16,-10 M-16,12 Q0,18 16,12 M-14,32 Q0,36 14,32" stroke="#5b3a20" stroke-width="2.5" fill="none" opacity="0.7"/>
+  </g>
+  <g transform="translate(70,300)">
+    <rect x="0" y="0" width="130" height="72" rx="14" fill="#ffffff" opacity="0.92"/>
+    <text x="18" y="46" font-family="Merriweather, serif" font-size="26" font-weight="700" fill="#5b4229">Çam Balı</text>
+  </g>
+</svg>
