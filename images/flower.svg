@@ -2,7 +2,7 @@
   <rect width="600" height="400" rx="8" fill="#fff8f0" />
   <g transform="translate(40,40)">
     <rect width="200" height="160" rx="12" fill="#f7e7d0" />
-    <g transform="translate(30,20)">
+    <g transform="translate(40,30)">
       <circle cx="40" cy="40" r="28" fill="#ffd08a" />
       <ellipse cx="40" cy="40" rx="10" ry="6" fill="#c26900" opacity="0.6" />
     </g>

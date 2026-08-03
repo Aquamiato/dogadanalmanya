@@ -4,9 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Doğadan Almanya — Doğal Bal, Petek Bal, Kuruyemiş & Lokum</title>
-    <meta name="description" content="Türkiye'den Almanya'ya doğal bal çeşitleri, petek bal, kuruyemiş ve lokum gönderimi. İthalat ve satış için iletişime geçin." />
+    <meta name="description" content="Türkiye'den Almanya'ya doğal bal, petek bal, kuruyemiş ve lokum. Kalite, doğallık ve güven." />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Doğadan Almanya — Doğal Bal & Kuruyemiş" />
+    <meta property="og:description" content="Türkiye'den Almanya'ya doğal bal, petek bal ve geleneksel lezzetler. Toplu ve perakende gönderim." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/Aquamiato/dogadanalmanya/main/images/hero.svg" />
+    <meta property="og:type" content="website" />
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -25,93 +31,64 @@
     </header>
 
     <main class="container">
-      <!-- Hero using local SVG to avoid hotlinking issues -->
-      <section class="hero lang-tr">
+      <!-- Hero: local SVG image to ensure rendering -->
+      <section class="hero lang-tr" aria-label="Ana bölüm">
         <div class="hero-media">
-          <img class="hero-img" src="images/hero.svg" alt="Arılar ve Bal" loading="eager">
+          <img class="hero-img" src="images/hero.svg" alt="Doğadan Almanya - Doğal Bal" loading="eager" width="1600" height="900">
           <div class="hero-overlay" aria-hidden="true"></div>
         </div>
         <div class="hero-copy">
-          <h2>Türkiye'nin doğal lezzetleri Almanya'ya</h2>
-          <p>Çiçek balı, kekik balı, petek bal ile yüksek kalite kuruyemiş ve geleneksel lokum. Sipariş ve toptan fiyat bilgisi için bizimle iletişime geçin.</p>
+          <h1>Türkiye'nin doğal lezzetleri Almanya'ya</h1>
+          <p>Çiçek balı, kekik balı, petek bal, kaliteli kuruyemiş ve geleneksel lokum. Güvenilir tedarik ve hızlı gönderim.</p>
           <a class="cta" href="#contact">Sipariş / İletişim</a>
         </div>
       </section>
 
-      <section class="hero lang-de hidden">
-        <div class="hero-media">
-          <img class="hero-img" src="images/hero.svg" alt="Bienen und Honig" loading="eager">
-          <div class="hero-overlay" aria-hidden="true"></div>
-        </div>
-        <div class="hero-copy">
-          <h2>Natürliche Köstlichkeiten aus der Türkei nach Deutschland</h2>
-          <p>Blütenhonig, Thymianhonig, Honigwaben sowie hochwertige Nüsse und traditionelles Lokum. Kontaktieren Sie uns für Bestellungen und Großhandelspreise.</p>
-          <a class="cta" href="#contact">Bestellen / Kontakt</a>
-        </div>
-      </section>
-
       <section id="products">
-        <h3 class="section-title">Ürünler / Produkte</h3>
+        <h2 class="section-title">Ürünler / Produkte</h2>
 
         <div class="grid">
           <article class="card">
-            <img src="images/flower.svg" alt="Çiçek Balı" loading="lazy" />
-            <h4 class="lang-tr">Çiçek Balı</h4>
-            <h4 class="lang-de hidden">Blütenhonig</h4>
+            <img src="images/flower.svg" alt="Çiçek Balı" loading="lazy" width="600" height="400" />
+            <h3 class="lang-tr">Çiçek Balı</h3>
             <p class="lang-tr">Doğal çiçek balı — çeşitli mevsim çiçeklerinden elde edilir. Tat, aroma ve akışkanlık seçenekleri mevcuttur.</p>
-            <p class="lang-de hidden">Natürlicher Blütenhonig — gewonnen aus verschiedenen Saisonblüten. Verschiedene Geschmacks- und Konsistenzprofile verfügbar.</p>
           </article>
 
           <article class="card">
-            <img src="images/thyme.svg" alt="Kekik Balı" loading="lazy" />
-            <h4 class="lang-tr">Kekik Balı</h4>
-            <h4 class="lang-de hidden">Thymianhonig</h4>
+            <img src="images/thyme.svg" alt="Kekik Balı" loading="lazy" width="600" height="400" />
+            <h3 class="lang-tr">Kekik Balı</h3>
             <p class="lang-tr">Aroması güçlü, yöresel kekik balı. Özellikle kahvaltılık ve şifa amaçlı tercih edilir.</p>
-            <p class="lang-de hidden">Aromatisch kräftiger Thymianhonig, regional produziert. Beliebt zum Frühstück und wegen seiner traditionellen Vorteile.</p>
           </article>
 
           <article class="card">
-            <img src="images/honeycomb.svg" alt="Petek Balı" loading="lazy" />
-            <h4 class="lang-tr">Petek Balı</h4>
-            <h4 class="lang-de hidden">Honigwabe</h4>
+            <img src="images/honeycomb.svg" alt="Petek Balı" loading="lazy" width="600" height="400" />
+            <h3 class="lang-tr">Petek Balı</h3>
             <p class="lang-tr">Doğal petek bal; balmumu içinde sunulur. Tağşişsizlik ve doğallığa önem veriyoruz.</p>
-            <p class="lang-de hidden">Natürliche Honigwabe; serviert in Waben. Wir legen Wert auf Reinheit und Natürlichkeit.</p>
           </article>
 
           <article class="card">
-            <img src="images/nuts.svg" alt="Kuruyemiş" loading="lazy" />
-            <h4 class="lang-tr">Kuruyemiş</h4>
-            <h4 class="lang-de hidden">Nüsse & Trockenfrüchte</h4>
+            <img src="images/nuts.svg" alt="Kuruyemiş" loading="lazy" width="600" height="400" />
+            <h3 class="lang-tr">Kuruyemiş</h3>
             <p class="lang-tr">Çiğ/dövülmüş badem, fındık, Antep fıstığı ve karışım paketleri. Toptan ve paket satış.</p>
-            <p class="lang-de hidden">Mandeln, Haselnüsse, Pistazien (roh/geröstet) und Mixe. Verkauf in Groß- und Einzelmengen.</p>
           </article>
 
           <article class="card">
-            <img src="images/lokum.svg" alt="Lokum" loading="lazy" />
-            <h4 class="lang-tr">Lokum</h4>
-            <h4 class="lang-de hidden">Lokum (Türkischer Genuss)</h4>
+            <img src="images/lokum.svg" alt="Lokum" loading="lazy" width="600" height="400" />
+            <h3 class="lang-tr">Lokum</h3>
             <p class="lang-tr">Geleneksel Türk lokumu — gül, fıstık, badem gibi çeşitler.</p>
-            <p class="lang-de hidden">Traditionelles türkisches Lokum — z.B. mit Rosen-, Pistazien- oder Mandelgeschmack.</p>
           </article>
         </div>
       </section>
 
       <section id="ordering">
-        <h3 class="section-title lang-tr">Siparişlendirme & Gönderim</h3>
-        <h3 class="section-title lang-de hidden">Bestellung & Versand</h3>
-        <p class="lang-tr">Almanya içi gönderimler sağlanır. Ürünlerimiz hem paket hem de toptan gönderime uygundur. Fiyat teklifi için lütfen miktarı ve tercih edilen ürünleri belirtin.</p>
-        <p class="lang-de hidden">Versand innerhalb Deutschlands möglich. Wir liefern sowohl im Einzel- als auch im Großhandelsformat. Bitte geben Sie Menge und gewünschte Produkte für ein Angebot an.</p>
+        <h2 class="section-title">Siparişlendirme & Gönderim</h2>
+        <p>Almanya içi gönderimler sağlanır. Ürünlerimiz hem paket hem de toptan gönderime uygundur. Fiyat teklifi için lütfen miktarı ve tercih edilen ürünleri belirtin.</p>
       </section>
 
       <section id="contact">
-        <h3 class="section-title lang-tr">İletişim</h3>
-        <h3 class="section-title lang-de hidden">Kontakt</h3>
-        <p class="lang-tr">E-posta: <a href="mailto:info@dogadanalmanya.de">info@dogadanalmanya.de</a></p>
-        <p class="lang-de hidden">E-Mail: <a href="mailto:info@dogadanalmanya.de">info@dogadanalmanya.de</a></p>
-        <p class="lang-tr">Telefon / WhatsApp: +49 170 000 0000 (örnek)</p>
-        <p class="lang-de hidden">Telefon / WhatsApp: +49 170 000 0000 (Beispiel)</p>
-        <p class="disclaimer lang-tr">Fiyat, stok ve gümrükleme bilgileri için lütfen doğrudan iletişime geçin.</p>
-        <p class="disclaimer lang-de hidden">Für Preise, Verfügbarkeit und Zollinformationen kontaktieren Sie uns bitte direkt.</p>
+        <h2 class="section-title">İletişim</h2>
+        <p>E-posta: <a href="mailto:info@dogadanalmanya.de">info@dogadanalmanya.de</a></p>
+        <p>Telefon / WhatsApp: +49 170 000 0000 (örnek)</p>
       </section>
     </main>
 
@@ -122,7 +99,7 @@
     </footer>
 
     <script>
-      // Simple language switcher: shows TR by default, DE when requested
+      // Simple language switcher (keeps TR default)
       (function(){
         const btnTr = document.getElementById('btn-tr');
         const btnDe = document.getElementById('btn-de');
@@ -137,7 +114,6 @@
         }
         btnTr.addEventListener('click', ()=> setLang('tr'));
         btnDe.addEventListener('click', ()=> setLang('de'));
-        // Initialize
         setLang('tr');
       })();
     </script>

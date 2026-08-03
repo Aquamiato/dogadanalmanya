@@ -1,4 +1,4 @@
-/* Updated palette, hero background (Unsplash), and improved layout */
+/* Finalized natural palette, responsive hero and cards, accessible typography */
 :root{
   --bg:#fff7f1;
   --card:#ffffff;
@@ -24,42 +24,35 @@ body{margin:0;font-family:var(--font-sans);background:var(--bg);color:#222;line-
 
 /* HERO */
 .hero{display:grid;grid-template-columns:1fr;gap:18px;margin:22px 0;align-items:center;position:relative}
-.hero-bg{
-  background-image: url("https://source.unsplash.com/1600x900/?nature,honey,bees,forest");
-  background-size:cover;
-  background-position:center;
-  border-radius:14px;
-  min-height:420px;
-  position:relative;
-  box-shadow:0 8px 30px rgba(0,0,0,0.08);
-  overflow:hidden;
-}
-.hero-bg::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(7,10,13,0.18) 0%, rgba(7,10,13,0.38) 100%);pointer-events:none}
-.hero-copy{position:relative;z-index:2;padding:28px;margin-top:-260px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,0.45)}
-.hero-copy h2{font-family:var(--font-serif);font-weight:700;font-size:2.1rem;margin:0 0 12px}
-.hero-copy p{max-width:60ch;opacity:0.95}
-.cta{display:inline-block;margin-top:12px;padding:12px 18px;background:var(--accent);color:#fff;border-radius:10px;text-decoration:none;box-shadow:0 6px 18px rgba(196,122,0,0.18)}
+.hero-media{position:relative;border-radius:14px;overflow:hidden}
+.hero-img{width:100%;height:420px;object-fit:cover;display:block}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(7,10,13,0.12), rgba(7,10,13,0.28));pointer-events:none}
+.hero-copy{position:relative;padding:24px;margin-top:-180px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,0.35)}
+.hero-copy h1{font-family:var(--font-serif);font-weight:700;font-size:2.2rem;margin:0}
+.hero-copy p{max-width:60ch;margin-top:10px}
+.cta{display:inline-block;margin-top:14px;padding:12px 18px;background:var(--accent);color:#fff;border-radius:10px;text-decoration:none;box-shadow:0 6px 18px rgba(196,122,0,0.18)}
 
 /* Cards */
-.section-title{margin-top:28px}
+.section-title{margin-top:28px;font-family:var(--font-serif);font-size:1.6rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}
 .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 6px 22px rgba(12,12,12,0.06);transition:transform .18s ease, box-shadow .18s ease}
 .card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(12,12,12,0.12)}
-.card img{width:100%;height:180px;object-fit:cover;border-radius:10px;background:linear-gradient(180deg,#fff8f0,#fff1e0)}
+.card img{width:100%;height:220px;object-fit:cover;border-radius:10px;background:linear-gradient(180deg,#fff8f0,#fff1e0)}
+.card h3{margin:12px 0 8px;font-size:1.1rem}
+.card p{color:var(--muted);font-size:0.95rem}
 
 .site-footer{padding:20px 0;text-align:center;color:var(--muted);font-size:0.95rem;border-top:1px solid rgba(0,0,0,0.04);margin-top:30px}
 .hidden{display:none}
 .disclaimer{font-size:0.95rem;color:var(--muted)}
 
-/* responsive */
 @media (min-width:900px){
   .hero{grid-template-columns:1fr 1fr}
   .hero-copy{margin-top:0;padding:40px}
-  .hero-bg{min-height:520px;border-radius:16px}
-  .hero-copy h2{font-size:2.6rem}
+  .hero-img{height:520px}
+  .hero-copy h1{font-size:2.8rem}
 }
 @media (max-width:640px){
   .hero-copy{margin-top:0;padding:18px;color:#111;text-shadow:none}
-  .hero-bg{min-height:240px}
-  .hero-copy h2{font-size:1.5rem}
+  .hero-img{height:260px}
+  .hero-copy h1{font-size:1.6rem}
 }
