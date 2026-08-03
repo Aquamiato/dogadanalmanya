@@ -25,9 +25,12 @@
     </header>
 
     <main class="container">
-      <!-- Hero with background photo that evokes nature -->
+      <!-- Hero with image (img + overlay + fallback) -->
       <section class="hero lang-tr">
-        <div class="hero-bg" role="img" aria-label="Arılar ve Bal" ></div>
+        <div class="hero-media">
+          <img class="hero-img" src="https://source.unsplash.com/1600x900/?nature,honey,bees,forest" alt="Arılar ve Bal" loading="eager" onerror="this.onerror=null;this.src='images/hero.svg'">
+          <div class="hero-overlay" aria-hidden="true"></div>
+        </div>
         <div class="hero-copy">
           <h2>Türkiye'nin doğal lezzetleri Almanya'ya</h2>
           <p>Çiçek balı, kekik balı, petek bal ile yüksek kalite kuruyemiş ve geleneksel lokum. Sipariş ve toptan fiyat bilgisi için bizimle iletişime geçin.</p>
@@ -36,7 +39,10 @@
       </section>
 
       <section class="hero lang-de hidden">
-        <div class="hero-bg" role="img" aria-label="Bienen und Honig"></div>
+        <div class="hero-media">
+          <img class="hero-img" src="https://source.unsplash.com/1600x900/?nature,honey,bees,forest" alt="Bienen und Honig" loading="eager" onerror="this.onerror=null;this.src='images/hero.svg'">
+          <div class="hero-overlay" aria-hidden="true"></div>
+        </div>
         <div class="hero-copy">
           <h2>Natürliche Köstlichkeiten aus der Türkei nach Deutschland</h2>
           <p>Blütenhonig, Thymianhonig, Honigwaben sowie hochwertige Nüsse und traditionelles Lokum. Kontaktieren Sie uns für Bestellungen und Großhandelspreise.</p>
