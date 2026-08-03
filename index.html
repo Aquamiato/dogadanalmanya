@@ -31,11 +31,44 @@
     </header>
 
     <main class="container">
-      <!-- Hero: local SVG image to ensure rendering -->
+      <!-- Hero: inline SVG to guarantee visibility across environments -->
       <section class="hero lang-tr" aria-label="Ana bölüm">
-        <div class="hero-media">
-          <img class="hero-img" src="images/hero.svg" alt="Doğadan Almanya - Doğal Bal" loading="eager" width="1600" height="900">
-          <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-media" aria-hidden="true">
+          <!-- Inline SVG hero art (ensures rendering even if raw SVG served oddly) -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Doğa ve bal resmi">
+            <defs>
+              <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#fffcf7"/>
+                <stop offset="1" stop-color="#fff6f0"/>
+              </linearGradient>
+            </defs>
+            <rect width="1600" height="900" fill="url(#sky)" />
+            <g transform="translate(0,220)">
+              <path d="M0,520 C220,380 420,420 700,520 C980,620 1280,500 1600,560 L1600,900 L0,900 Z" fill="#f4e0c8" />
+              <path d="M0,560 C240,420 500,460 760,560 C1020,660 1280,560 1600,600 L1600,900 L0,900 Z" fill="#ecd5b4" opacity="0.95" />
+            </g>
+            <rect x="0" y="620" width="1600" height="280" fill="#fff1e0" />
+            <g transform="translate(1150,120)">
+              <circle r="70" fill="#ffd08a" />
+              <circle r="46" fill="#fff1c9" />
+            </g>
+            <g transform="translate(420,320)">
+              <ellipse cx="0" cy="0" rx="22" ry="14" fill="#c26900" />
+              <path d="M-8,-2 C0,-8 8,-8 16,-2" stroke="#000" stroke-width="2" fill="none" opacity="0.6" />
+              <path d="M-8,2 C0,8 8,8 16,2" stroke="#000" stroke-width="2" fill="none" opacity="0.6" />
+            </g>
+            <g transform="translate(960,380) scale(1.05)">
+              <ellipse cx="0" cy="0" rx="22" ry="14" fill="#c26900" />
+              <path d="M-9,-3 C0,-9 9,-9 17,-3" stroke="#000" stroke-width="2" fill="none" opacity="0.6" />
+            </g>
+            <g transform="translate(260,520) scale(1.18)">
+              <rect x="0" y="0" width="160" height="160" rx="20" fill="#ffdca3" stroke="#e2a64a" stroke-width="3" />
+              <ellipse cx="80" cy="22" rx="48" ry="12" fill="#f3b04a"/>
+              <text x="24" y="110" font-family="Merriweather, serif" font-size="20" fill="#8b4b00">Doğal Bal</text>
+            </g>
+            <text x="360" y="220" font-family="Merriweather, serif" font-size="58" fill="#2f2f2f">Doğadan Almanya</text>
+            <text x="360" y="270" font-family="Inter, sans-serif" font-size="22" fill="#6b6b6b">Doğal bal ve lezzetler — Almanya'ya</text>
+          </svg>
         </div>
         <div class="hero-copy">
           <h1>Türkiye'nin doğal lezzetleri Almanya'ya</h1>
