@@ -25,10 +25,10 @@
     </header>
 
     <main class="container">
-      <!-- Hero with image (img + overlay + fallback) -->
+      <!-- Hero using local SVG to avoid hotlinking issues -->
       <section class="hero lang-tr">
         <div class="hero-media">
-          <img class="hero-img" src="https://source.unsplash.com/1600x900/?nature,honey,bees,forest" alt="Arılar ve Bal" loading="eager" onerror="this.onerror=null;this.src='images/hero.svg'">
+          <img class="hero-img" src="images/hero.svg" alt="Arılar ve Bal" loading="eager">
           <div class="hero-overlay" aria-hidden="true"></div>
         </div>
         <div class="hero-copy">
@@ -40,7 +40,7 @@
 
       <section class="hero lang-de hidden">
         <div class="hero-media">
-          <img class="hero-img" src="https://source.unsplash.com/1600x900/?nature,honey,bees,forest" alt="Bienen und Honig" loading="eager" onerror="this.onerror=null;this.src='images/hero.svg'">
+          <img class="hero-img" src="images/hero.svg" alt="Bienen und Honig" loading="eager">
           <div class="hero-overlay" aria-hidden="true"></div>
         </div>
         <div class="hero-copy">
@@ -55,7 +55,7 @@
 
         <div class="grid">
           <article class="card">
-            <img src="https://source.unsplash.com/600x400/?flower,honey" alt="Çiçek Balı" loading="lazy" onerror="this.onerror=null;this.src='images/flower.svg'" />
+            <img src="images/flower.svg" alt="Çiçek Balı" loading="lazy" />
             <h4 class="lang-tr">Çiçek Balı</h4>
             <h4 class="lang-de hidden">Blütenhonig</h4>
             <p class="lang-tr">Doğal çiçek balı — çeşitli mevsim çiçeklerinden elde edilir. Tat, aroma ve akışkanlık seçenekleri mevcuttur.</p>
@@ -63,7 +63,7 @@
           </article>
 
           <article class="card">
-            <img src="https://source.unsplash.com/600x400/?thyme,honey,herb" alt="Kekik Balı" loading="lazy" onerror="this.onerror=null;this.src='images/thyme.svg'" />
+            <img src="images/thyme.svg" alt="Kekik Balı" loading="lazy" />
             <h4 class="lang-tr">Kekik Balı</h4>
             <h4 class="lang-de hidden">Thymianhonig</h4>
             <p class="lang-tr">Aroması güçlü, yöresel kekik balı. Özellikle kahvaltılık ve şifa amaçlı tercih edilir.</p>
@@ -71,7 +71,7 @@
           </article>
 
           <article class="card">
-            <img src="https://source.unsplash.com/600x400/?honeycomb" alt="Petek Balı" loading="lazy" onerror="this.onerror=null;this.src='images/honeycomb.svg'" />
+            <img src="images/honeycomb.svg" alt="Petek Balı" loading="lazy" />
             <h4 class="lang-tr">Petek Balı</h4>
             <h4 class="lang-de hidden">Honigwabe</h4>
             <p class="lang-tr">Doğal petek bal; balmumu içinde sunulur. Tağşişsizlik ve doğallığa önem veriyoruz.</p>
@@ -79,7 +79,7 @@
           </article>
 
           <article class="card">
-            <img src="https://source.unsplash.com/600x400/?nuts" alt="Kuruyemiş" loading="lazy" onerror="this.onerror=null;this.src='images/nuts.svg'" />
+            <img src="images/nuts.svg" alt="Kuruyemiş" loading="lazy" />
             <h4 class="lang-tr">Kuruyemiş</h4>
             <h4 class="lang-de hidden">Nüsse & Trockenfrüchte</h4>
             <p class="lang-tr">Çiğ/dövülmüş badem, fındık, Antep fıstığı ve karışım paketleri. Toptan ve paket satış.</p>
@@ -87,7 +87,7 @@
           </article>
 
           <article class="card">
-            <img src="https://source.unsplash.com/600x400/?turkish-delight,lokum" alt="Lokum" loading="lazy" onerror="this.onerror=null;this.src='images/lokum.svg'" />
+            <img src="images/lokum.svg" alt="Lokum" loading="lazy" />
             <h4 class="lang-tr">Lokum</h4>
             <h4 class="lang-de hidden">Lokum (Türkischer Genuss)</h4>
             <p class="lang-tr">Geleneksel Türk lokumu — gül, fıstık, badem gibi çeşitler.</p>
