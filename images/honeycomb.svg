@@ -1,7 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
-  <rect width="600" height="400" fill="#fff8f0"/>
+  <rect width="600" height="400" rx="8" fill="#fff8f0" />
   <g transform="translate(40,40)">
     <rect width="200" height="160" rx="12" fill="#fde5c9" />
-    <text x="220" y="90" font-family="Arial" font-size="28" fill="#7a4a00">Petek Balı</text>
+    <g transform="translate(30,20)">
+      <rect x="20" y="20" width="120" height="80" rx="8" fill="#ffdd8a" />
+      <path d="M40 60 L60 50 L80 60 L100 50" stroke="#c26900" stroke-width="3" fill="none" opacity="0.6"/>
+    </g>
+    <text x="220" y="90" font-family="Inter, sans-serif" font-size="24" fill="#7a4a00">Petek Balı</text>
   </g>
 </svg>
