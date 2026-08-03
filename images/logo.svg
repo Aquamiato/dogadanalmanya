@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <rect width="200" height="60" fill="#fff0e6"/>
+  <circle cx="36" cy="30" r="22" fill="#b26900"/>
+  <path d="M36 18c4 0 6.8 4 6.8 8.3S40 34.6 36 34.6 29.2 30.3 29.2 26.3 32 18 36 18z" fill="#fff"/>
+  <text x="70" y="36" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#222">Doğadan Almanya</text>
+</svg>
