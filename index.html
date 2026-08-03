@@ -5,32 +5,89 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Doğadan Almanya — Doğal Bal, Petek Bal, Kuruyemiş & Lokum</title>
     <meta name="description" content="Türkiye'den Almanya'ya doğal bal, petek bal, kuruyemiş ve lokum. Kalite, doğallık ve güven." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://dogadanalmanya.de/" />
+    <meta name="theme-color" content="#1f3826" />
 
     <!-- Open Graph / Social -->
     <meta property="og:title" content="Doğadan Almanya — Doğal Bal & Kuruyemiş" />
     <meta property="og:description" content="Türkiye'den Almanya'ya doğal bal, petek bal ve geleneksel lezzetler. Toplu ve perakende gönderim." />
     <meta property="og:image" content="https://raw.githubusercontent.com/Aquamiato/dogadanalmanya/main/images/hero.svg" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:url" content="https://dogadanalmanya.de/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Doğadan Almanya — Doğal Bal & Kuruyemiş" />
+    <meta name="twitter:description" content="Türkiye'den Almanya'ya doğal bal, petek bal ve geleneksel lezzetler." />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Aquamiato/dogadanalmanya/main/images/hero.svg" />
 
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Doğadan Almanya",
+      "url": "https://dogadanalmanya.de/",
+      "logo": "https://raw.githubusercontent.com/Aquamiato/dogadanalmanya/main/images/logo.svg",
+      "description": "Türkiye'den Almanya'ya doğal bal, petek bal, kuruyemiş ve geleneksel lokum tedarikçisi.",
+      "email": "info@dogadanalmanya.de",
+      "areaServed": "DE",
+      "sameAs": []
+    }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">İçeriğe geç / Zum Inhalt springen</a>
     <header class="site-header">
       <div class="container header-row">
         <a href="./" class="brand-link" aria-label="Doğadan Almanya">
           <img src="images/logo.svg" alt="Doğadan Almanya" class="brand-logo" width="180" height="56">
           <span class="brand-text">Doğadan Almanya <span class="muted">| Natur aus der Türkei</span></span>
         </a>
+
+        <nav class="main-nav" aria-label="Ana menü">
+          <a href="#products" class="lang-tr">Ürünler</a>
+          <a href="#products" class="lang-de hidden">Produkte</a>
+          <a href="#about" class="lang-tr">Hakkımızda</a>
+          <a href="#about" class="lang-de hidden">Über uns</a>
+          <a href="#ordering" class="lang-tr">Sipariş</a>
+          <a href="#ordering" class="lang-de hidden">Bestellung</a>
+          <a href="#faq" class="lang-tr">S.S.S.</a>
+          <a href="#faq" class="lang-de hidden">FAQ</a>
+          <a href="#contact" class="lang-tr">İletişim</a>
+          <a href="#contact" class="lang-de hidden">Kontakt</a>
+        </nav>
+
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menüyü aç/kapat">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+
         <nav class="lang-switch" aria-label="Language switch">
           <button id="btn-tr" class="active" aria-pressed="true">TR</button>
           <button id="btn-de" aria-pressed="false">DE</button>
         </nav>
       </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobil menü">
+        <a href="#products" class="lang-tr">Ürünler</a>
+        <a href="#products" class="lang-de hidden">Produkte</a>
+        <a href="#about" class="lang-tr">Hakkımızda</a>
+        <a href="#about" class="lang-de hidden">Über uns</a>
+        <a href="#ordering" class="lang-tr">Sipariş</a>
+        <a href="#ordering" class="lang-de hidden">Bestellung</a>
+        <a href="#faq" class="lang-tr">S.S.S.</a>
+        <a href="#faq" class="lang-de hidden">FAQ</a>
+        <a href="#contact" class="lang-tr">İletişim</a>
+        <a href="#contact" class="lang-de hidden">Kontakt</a>
+      </nav>
     </header>
 
-    <main class="container">
+    <main class="container" id="main-content">
       <!-- Hero: inline SVG to guarantee visibility across environments -->
       <section class="hero" aria-label="Ana bölüm">
         <div class="hero-media" aria-hidden="true">
@@ -147,6 +204,54 @@
         </div>
       </section>
 
+      <section id="about" class="section-block">
+        <h2 class="section-title lang-tr">Hakkımızda</h2>
+        <h2 class="section-title lang-de hidden">Über uns</h2>
+        <p class="section-sub lang-tr">Türkiye'nin doğal lezzetlerini, katkısız ve güvenilir şekilde Almanya'ya ulaştırıyoruz.</p>
+        <p class="section-sub lang-de hidden">Wir bringen die natürlichen Köstlichkeiten der Türkei rein und zuverlässig nach Deutschland.</p>
+
+        <div class="about-grid">
+          <ul class="trust-list">
+            <li>
+              <span class="icon" aria-hidden="true">🌿</span>
+              <div>
+                <strong class="lang-tr">Katkısız & Doğal</strong>
+                <strong class="lang-de hidden">Rein & Natürlich</strong>
+                <span class="desc lang-tr">Ürünlerimize şeker şurubu veya yapay katkı eklenmez.</span>
+                <span class="desc lang-de hidden">Unseren Produkten werden kein Zuckersirup und keine künstlichen Zusätze zugesetzt.</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">🐝</span>
+              <div>
+                <strong class="lang-tr">Kaynağından Direkt</strong>
+                <strong class="lang-de hidden">Direkt von der Quelle</strong>
+                <span class="desc lang-tr">Ürünler Türkiye'deki üreticilerden temin edilir, aracı sayısı azdır.</span>
+                <span class="desc lang-de hidden">Die Produkte stammen direkt von Erzeugern in der Türkei, mit wenigen Zwischenhändlern.</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">📦</span>
+              <div>
+                <strong class="lang-tr">Perakende & Toptan</strong>
+                <strong class="lang-de hidden">Einzel- & Großhandel</strong>
+                <span class="desc lang-tr">Küçük paketten toplu siparişe kadar esnek gönderim seçenekleri.</span>
+                <span class="desc lang-de hidden">Flexible Versandoptionen vom kleinen Paket bis zur Großbestellung.</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">🇩🇪</span>
+              <div>
+                <strong class="lang-tr">Almanya'ya Odaklı</strong>
+                <strong class="lang-de hidden">Fokus auf Deutschland</strong>
+                <span class="desc lang-tr">Almanya içi teslimat süreçlerine göre planlanan gönderim.</span>
+                <span class="desc lang-de hidden">Versand, der auf Lieferprozesse innerhalb Deutschlands abgestimmt ist.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section id="ordering" class="section-block">
         <h2 class="section-title lang-tr">Siparişlendirme & Gönderim</h2>
         <h2 class="section-title lang-de hidden">Bestellung & Versand</h2>
@@ -180,20 +285,64 @@
         </div>
       </section>
 
+      <section id="faq" class="section-block">
+        <h2 class="section-title lang-tr">Sıkça Sorulan Sorular</h2>
+        <h2 class="section-title lang-de hidden">Häufig gestellte Fragen</h2>
+
+        <div class="faq">
+          <details>
+            <summary class="lang-tr">Gerçek balı sahte baldan nasıl ayırt edebilirim?</summary>
+            <summary class="lang-de hidden">Wie erkenne ich echten Honig?</summary>
+            <div class="faq-body lang-tr">Kesin sonuç yalnızca laboratuvar testiyle mümkündür; ancak gerçek bal genelde zamanla kristalize olur, yoğun bir aroması vardır ve içeriğinde şeker şurubu bulunmaz. Biz ürünlerimizi katkısız ve doğal işlemlerle hazırlıyoruz.</div>
+            <div class="faq-body lang-de hidden">Ein eindeutiger Nachweis ist nur durch ein Labortest möglich; echter Honig kristallisiert jedoch meist mit der Zeit, hat ein intensives Aroma und enthält keinen Zuckersirup. Unsere Produkte werden naturbelassen und ohne Zusätze verarbeitet.</div>
+          </details>
+          <details>
+            <summary class="lang-tr">Balı nasıl saklamalıyım?</summary>
+            <summary class="lang-de hidden">Wie sollte ich Honig lagern?</summary>
+            <div class="faq-body lang-tr">Serin, oda sıcaklığında ve doğrudan güneş ışığı almayan bir yerde, kapağı sıkıca kapalı şekilde saklayın. Kristalize olması doğaldır ve kalitesini etkilemez.</div>
+            <div class="faq-body lang-de hidden">Lagern Sie den Honig kühl, bei Raumtemperatur, geschützt vor direktem Sonnenlicht und gut verschlossen. Eine Kristallisation ist natürlich und beeinträchtigt die Qualität nicht.</div>
+          </details>
+          <details>
+            <summary class="lang-tr">Toptan sipariş verebilir miyim?</summary>
+            <summary class="lang-de hidden">Kann ich eine Großbestellung aufgeben?</summary>
+            <div class="faq-body lang-tr">Evet, hem perakende hem toptan gönderim yapıyoruz. İletişim bölümünden miktar ve ürün tercihinizi belirterek fiyat teklifi alabilirsiniz.</div>
+            <div class="faq-body lang-de hidden">Ja, wir liefern sowohl im Einzel- als auch im Großhandel. Kontaktieren Sie uns mit Menge und gewünschten Produkten für ein Angebot.</div>
+          </details>
+          <details>
+            <summary class="lang-tr">Almanya dışına gönderim yapıyor musunuz?</summary>
+            <summary class="lang-de hidden">Versenden Sie auch außerhalb Deutschlands?</summary>
+            <div class="faq-body lang-tr">Şu anda gönderim odağımız Almanya. Farklı bir bölge için ihtiyacınız varsa lütfen bize e-posta ile ulaşın, uygunluğu birlikte değerlendirelim.</div>
+            <div class="faq-body lang-de hidden">Aktuell konzentrieren wir uns auf den Versand innerhalb Deutschlands. Bei Bedarf für eine andere Region kontaktieren Sie uns bitte per E-Mail.</div>
+          </details>
+        </div>
+      </section>
+
       <section id="contact" class="section-block">
         <h2 class="section-title lang-tr">İletişim</h2>
         <h2 class="section-title lang-de hidden">Kontakt</h2>
         <div class="contact-grid">
           <p>📧 <a href="mailto:info@dogadanalmanya.de">info@dogadanalmanya.de</a></p>
-          <p class="lang-tr">📱 Telefon / WhatsApp: +49 170 000 0000 (örnek)</p>
-          <p class="lang-de hidden">📱 Telefon / WhatsApp: +49 170 000 0000 (Beispiel)</p>
+          <p class="lang-tr">💬 Sorularınız için e-posta yoluyla bize ulaşabilirsiniz.<br><span class="contact-note">(WhatsApp / telefon hattı yakında eklenecektir.)</span></p>
+          <p class="lang-de hidden">💬 Bei Fragen erreichen Sie uns per E-Mail.<br><span class="contact-note">(WhatsApp/Telefon folgt in Kürze.)</span></p>
         </div>
       </section>
     </main>
 
+    <div class="floating-actions">
+      <button id="fab-top" class="fab fab-top" aria-label="Sayfa başına dön / Nach oben">↑</button>
+    </div>
+
     <footer class="site-footer">
       <div class="container">
         <p>© 2026 Doğadan Almanya — Doğal Bal & Kuruyemiş / Natur aus der Türkei</p>
+        <nav class="footer-links" aria-label="Alt menü">
+          <a href="#products" class="lang-tr">Ürünler</a>
+          <a href="#products" class="lang-de hidden">Produkte</a>
+          <a href="#faq" class="lang-tr">S.S.S.</a>
+          <a href="#faq" class="lang-de hidden">FAQ</a>
+          <a href="#contact" class="lang-tr">İletişim</a>
+          <a href="#contact" class="lang-de hidden">Kontakt</a>
+        </nav>
       </div>
     </footer>
 
@@ -214,6 +363,35 @@
         btnTr.addEventListener('click', ()=> setLang('tr'));
         btnDe.addEventListener('click', ()=> setLang('de'));
         setLang('tr');
+      })();
+
+      // Mobile nav toggle
+      (function(){
+        const toggle = document.getElementById('nav-toggle');
+        const menu = document.getElementById('mobile-nav');
+        if(!toggle || !menu) return;
+        toggle.addEventListener('click', ()=>{
+          const open = menu.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', String(open));
+        });
+        menu.querySelectorAll('a').forEach(a=>{
+          a.addEventListener('click', ()=>{
+            menu.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      })();
+
+      // Scroll-to-top floating button
+      (function(){
+        const fabTop = document.getElementById('fab-top');
+        if(!fabTop) return;
+        window.addEventListener('scroll', ()=>{
+          fabTop.classList.toggle('visible', window.scrollY > 500);
+        }, { passive: true });
+        fabTop.addEventListener('click', ()=>{
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
       })();
     </script>
   </body>
