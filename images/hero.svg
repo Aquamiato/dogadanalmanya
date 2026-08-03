@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#fef3e6"/>
+      <stop offset="1" stop-color="#fdebd3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#g)"/>
+  <g transform="translate(60,40)">
+    <circle cx="120" cy="120" r="80" fill="#c47a00" />
+    <path d="M120 80c20 0 35 18 35 40s-15 40-35 40-35-18-35-40 15-40 35-40z" fill="#fff"/>
+    <text x="260" y="140" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#2f2f2f">Doğadan Almanya</text>
+  </g>
+</svg>

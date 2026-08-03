@@ -1,5 +1,39 @@
+/* Palette and layout adjustments for warmer look */
+:root{
+  --bg:#fff8f0; /* warmer background */
+  --card:#ffffff;
+  --accent:#c47a00; /* honey accent */
+  --muted:#6b6b6b;
+  --container:1100px;
+  --radius:10px;
+  --gap:18px;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+body{font-family:var(--font-sans);margin:0;background:var(--bg);color:#222;line-height:1.45}
+.container{max-width:var(--container);margin:0 auto;padding:24px}
+.site-header{background:transparent;padding:14px 0}
 .brand-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.brand-text{font-weight:700;font-size:1.1rem}
 .brand .muted{font-size:0.95rem;color:var(--muted);margin-left:8px}
 .brand-logo{display:block;max-height:56px;width:auto}
-.hero-img{width:100%;height:auto;border-radius:10px}
-.card img{width:100%;height:auto;border-radius:8px;object-fit:cover}
+.lang-switch{margin-left:auto}
+.lang-switch button{border:1px solid #ddd;background:#fff;padding:6px 8px;cursor:pointer;border-radius:6px;margin-left:6px}
+.lang-switch button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.hero{display:grid;grid-template-columns:1fr;gap:18px;margin:18px 0}
+.hero-img{width:100%;height:320px;object-fit:cover;border-radius:12px;display:block}
+.hero-copy{padding:8px}
+.cta{display:inline-block;margin-top:12px;padding:10px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+.section-title{margin-top:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:12px}
+.card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.site-footer{padding:20px 0;text-align:center;color:var(--muted);font-size:0.95rem;border-top:1px solid rgba(0,0,0,0.04);margin-top:30px}
+.hidden{display:none}
+.disclaimer{font-size:0.95rem;color:var(--muted)}
+@media (min-width:900px){
+  .hero{grid-template-columns:1fr 1fr;align-items:center}
+  .hero-img{height:420px}
+  .hero-copy{padding:32px}
+}
+@media (max-width:640px){.lang-switch{float:none;margin-top:8px;text-align:right}}
