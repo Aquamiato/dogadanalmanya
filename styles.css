@@ -33,7 +33,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:3px solid v
 }
 
 /* Header */
-.site-header{background:var(--surface-2);padding:14px 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 14px rgba(0,0,0,0.5);border-bottom:1px solid var(--border-tint)}
+.site-header{background:var(--surface-2);padding:14px 0;box-shadow:0 2px 14px rgba(0,0,0,0.5);border-bottom:1px solid var(--border-tint)}
 .header-row{display:flex;align-items:center;gap:12px;flex-wrap:nowrap}
 .brand-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text);min-width:0;flex:1 1 auto;overflow:hidden}
 .brand-text{font-weight:700;font-size:1.05rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
@@ -114,8 +114,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:3px solid v
 .step h4{margin:6px 0 4px;font-size:1rem;color:var(--text)}
 .step p{margin:0;font-size:0.9rem}
 
-/* Anchor targets shouldn't hide under the sticky header */
-section[id]{scroll-margin-top:84px}
+/* Small breathing room above anchor targets (header no longer sticky) */
+section[id]{scroll-margin-top:12px}
 
 /* About / trust section */
 .about-grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:start;margin-top:18px}
