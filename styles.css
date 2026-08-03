@@ -1,39 +1,65 @@
-/* Palette and layout adjustments for warmer look */
+/* Updated palette, hero background (Unsplash), and improved layout */
 :root{
-  --bg:#fff8f0; /* warmer background */
+  --bg:#fff7f1;
   --card:#ffffff;
-  --accent:#c47a00; /* honey accent */
+  --accent:#c47a00;
   --muted:#6b6b6b;
   --container:1100px;
-  --radius:10px;
+  --radius:12px;
   --gap:18px;
-  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  --font-serif: 'Merriweather', serif;
 }
 *{box-sizing:border-box}
-body{font-family:var(--font-sans);margin:0;background:var(--bg);color:#222;line-height:1.45}
-.container{max-width:var(--container);margin:0 auto;padding:24px}
+body{margin:0;font-family:var(--font-sans);background:var(--bg);color:#222;line-height:1.5}
+.container{max-width:var(--container);margin:0 auto;padding:28px}
 .site-header{background:transparent;padding:14px 0}
+.header-row{display:flex;align-items:center;gap:16px}
 .brand-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
-.brand-text{font-weight:700;font-size:1.1rem}
-.brand .muted{font-size:0.95rem;color:var(--muted);margin-left:8px}
-.brand-logo{display:block;max-height:56px;width:auto}
+.brand-text{font-weight:700;font-size:1.05rem}
+.brand-logo{max-height:56px}
 .lang-switch{margin-left:auto}
-.lang-switch button{border:1px solid #ddd;background:#fff;padding:6px 8px;cursor:pointer;border-radius:6px;margin-left:6px}
+.lang-switch button{border:1px solid #eee;background:#fff;padding:6px 8px;border-radius:8px}
 .lang-switch button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-.hero{display:grid;grid-template-columns:1fr;gap:18px;margin:18px 0}
-.hero-img{width:100%;height:320px;object-fit:cover;border-radius:12px;display:block}
-.hero-copy{padding:8px}
-.cta{display:inline-block;margin-top:12px;padding:10px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:1fr;gap:18px;margin:22px 0;align-items:center;position:relative}
+.hero-bg{
+  background-image: url("https://source.unsplash.com/1600x900/?nature,honey,bees,forest");
+  background-size:cover;
+  background-position:center;
+  border-radius:14px;
+  min-height:420px;
+  position:relative;
+  box-shadow:0 8px 30px rgba(0,0,0,0.08);
+  overflow:hidden;
+}
+.hero-bg::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(7,10,13,0.18) 0%, rgba(7,10,13,0.38) 100%);pointer-events:none}
+.hero-copy{position:relative;z-index:2;padding:28px;margin-top:-260px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,0.45)}
+.hero-copy h2{font-family:var(--font-serif);font-weight:700;font-size:2.1rem;margin:0 0 12px}
+.hero-copy p{max-width:60ch;opacity:0.95}
+.cta{display:inline-block;margin-top:12px;padding:12px 18px;background:var(--accent);color:#fff;border-radius:10px;text-decoration:none;box-shadow:0 6px 18px rgba(196,122,0,0.18)}
+
+/* Cards */
 .section-title{margin-top:28px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:12px}
-.card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(0,0,0,0.06)}
-.card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}
+.card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 6px 22px rgba(12,12,12,0.06);transition:transform .18s ease, box-shadow .18s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(12,12,12,0.12)}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:10px;background:linear-gradient(180deg,#fff8f0,#fff1e0)}
+
 .site-footer{padding:20px 0;text-align:center;color:var(--muted);font-size:0.95rem;border-top:1px solid rgba(0,0,0,0.04);margin-top:30px}
 .hidden{display:none}
 .disclaimer{font-size:0.95rem;color:var(--muted)}
+
+/* responsive */
 @media (min-width:900px){
-  .hero{grid-template-columns:1fr 1fr;align-items:center}
-  .hero-img{height:420px}
-  .hero-copy{padding:32px}
+  .hero{grid-template-columns:1fr 1fr}
+  .hero-copy{margin-top:0;padding:40px}
+  .hero-bg{min-height:520px;border-radius:16px}
+  .hero-copy h2{font-size:2.6rem}
 }
-@media (max-width:640px){.lang-switch{float:none;margin-top:8px;text-align:right}}
+@media (max-width:640px){
+  .hero-copy{margin-top:0;padding:18px;color:#111;text-shadow:none}
+  .hero-bg{min-height:240px}
+  .hero-copy h2{font-size:1.5rem}
+}
