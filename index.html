@@ -32,96 +32,162 @@
 
     <main class="container">
       <!-- Hero: inline SVG to guarantee visibility across environments -->
-      <section class="hero lang-tr" aria-label="Ana bölüm">
+      <section class="hero" aria-label="Ana bölüm">
         <div class="hero-media" aria-hidden="true">
-          <!-- Inline SVG hero art (ensures rendering even if raw SVG served oddly) -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Doğa ve bal resmi">
             <defs>
               <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0" stop-color="#fffcf7"/>
-                <stop offset="1" stop-color="#fff6f0"/>
+                <stop offset="0" stop-color="#f6f3ea"/>
+                <stop offset="1" stop-color="#e7efe1"/>
               </linearGradient>
             </defs>
             <rect width="1600" height="900" fill="url(#sky)" />
-            <g transform="translate(0,220)">
-              <path d="M0,520 C220,380 420,420 700,520 C980,620 1280,500 1600,560 L1600,900 L0,900 Z" fill="#f4e0c8" />
-              <path d="M0,560 C240,420 500,460 760,560 C1020,660 1280,560 1600,600 L1600,900 L0,900 Z" fill="#ecd5b4" opacity="0.95" />
+            <g transform="translate(1150,110)">
+              <circle r="70" fill="#e7b74f" />
+              <circle r="46" fill="#fbe6b0" />
             </g>
-            <rect x="0" y="620" width="1600" height="280" fill="#fff1e0" />
-            <g transform="translate(1150,120)">
-              <circle r="70" fill="#ffd08a" />
-              <circle r="46" fill="#fff1c9" />
+            <g transform="translate(0,260)">
+              <path d="M0,480 C260,360 480,420 760,480 C1040,540 1300,440 1600,480 L1600,900 L0,900 Z" fill="#8fb37e" />
+              <path d="M0,540 C260,440 520,480 800,540 C1080,600 1340,520 1600,540 L1600,900 L0,900 Z" fill="#5c8a5a" opacity="0.9" />
+              <path d="M0,600 C280,540 560,570 840,600 C1100,630 1360,590 1600,600 L1600,900 L0,900 Z" fill="#2f4f38" opacity="0.9" />
             </g>
-            <g transform="translate(420,320)">
-              <ellipse cx="0" cy="0" rx="22" ry="14" fill="#c26900" />
-              <path d="M-8,-2 C0,-8 8,-8 16,-2" stroke="#000" stroke-width="2" fill="none" opacity="0.6" />
-              <path d="M-8,2 C0,8 8,8 16,2" stroke="#000" stroke-width="2" fill="none" opacity="0.6" />
+            <g transform="translate(420,340)">
+              <ellipse cx="0" cy="0" rx="22" ry="14" fill="#3a2b12" />
+              <path d="M-8,-2 C0,-8 8,-8 16,-2" stroke="#233326" stroke-width="2" fill="none" opacity="0.7" />
+              <path d="M-8,2 C0,8 8,8 16,2" stroke="#233326" stroke-width="2" fill="none" opacity="0.7" />
             </g>
-            <g transform="translate(960,380) scale(1.05)">
-              <ellipse cx="0" cy="0" rx="22" ry="14" fill="#c26900" />
-              <path d="M-9,-3 C0,-9 9,-9 17,-3" stroke="#000" stroke-width="2" fill="none" opacity="0.6" />
+            <g transform="translate(960,400) scale(1.05)">
+              <ellipse cx="0" cy="0" rx="22" ry="14" fill="#3a2b12" />
+              <path d="M-9,-3 C0,-9 9,-9 17,-3" stroke="#233326" stroke-width="2" fill="none" opacity="0.7" />
             </g>
-            <g transform="translate(260,520) scale(1.18)">
-              <rect x="0" y="0" width="160" height="160" rx="20" fill="#ffdca3" stroke="#e2a64a" stroke-width="3" />
-              <ellipse cx="80" cy="22" rx="48" ry="12" fill="#f3b04a"/>
-              <text x="24" y="110" font-family="Merriweather, serif" font-size="20" fill="#8b4b00">Doğal Bal</text>
+            <g transform="translate(260,560) scale(1.18)">
+              <rect x="0" y="0" width="160" height="160" rx="20" fill="#ffd08a" stroke="#b06f10" stroke-width="3" />
+              <ellipse cx="80" cy="22" rx="48" ry="12" fill="#d99a2b"/>
+              <text x="24" y="110" font-family="Merriweather, serif" font-size="20" fill="#5b4229">Doğal Bal</text>
             </g>
-            <text x="360" y="220" font-family="Merriweather, serif" font-size="58" fill="#2f2f2f">Doğadan Almanya</text>
-            <text x="360" y="270" font-family="Inter, sans-serif" font-size="22" fill="#6b6b6b">Doğal bal ve lezzetler — Almanya'ya</text>
+            <text x="360" y="230" font-family="Merriweather, serif" font-size="58" font-weight="900" fill="#1f3826">Doğadan Almanya</text>
+            <text x="360" y="278" font-family="Inter, sans-serif" font-size="22" fill="#5c6b5e">Doğal bal ve lezzetler — Almanya'ya</text>
           </svg>
         </div>
         <div class="hero-copy">
-          <h1>Türkiye'nin doğal lezzetleri Almanya'ya</h1>
-          <p>Çiçek balı, kekik balı, petek bal, kaliteli kuruyemiş ve geleneksel lokum. Güvenilir tedarik ve hızlı gönderim.</p>
-          <a class="cta" href="#contact">Sipariş / İletişim</a>
+          <h1 class="lang-tr">Türkiye'nin doğal lezzetleri Almanya'ya</h1>
+          <h1 class="lang-de hidden">Naturprodukte aus der Türkei — direkt nach Deutschland</h1>
+          <p class="lang-tr">Çiçek balı, kekik balı, petek bal, kaliteli kuruyemiş ve geleneksel lokum. Güvenilir tedarik ve hızlı gönderim.</p>
+          <p class="lang-de hidden">Blütenhonig, Thymianhonig, Wabenhonig, hochwertige Nüsse und traditioneller Lokum. Zuverlässige Lieferung, schneller Versand.</p>
+          <a class="cta lang-tr" href="#products">Ürünleri Gör</a>
+          <a class="cta lang-de hidden" href="#products">Produkte ansehen</a>
         </div>
       </section>
 
-      <section id="products">
-        <h2 class="section-title">Ürünler / Produkte</h2>
+      <div class="intro-strip">
+        <span class="pill lang-tr">🌿 %100 Doğal</span>
+        <span class="pill lang-de hidden">🌿 100% Natürlich</span>
+        <span class="pill lang-tr">🍯 Ham & İşlenmemiş</span>
+        <span class="pill lang-de hidden">🍯 Roh & Unverarbeitet</span>
+        <span class="pill lang-tr">🚚 Almanya'ya Hızlı Gönderim</span>
+        <span class="pill lang-de hidden">🚚 Schneller Versand nach Deutschland</span>
+      </div>
+
+      <section id="products" class="section-block">
+        <h2 class="section-title lang-tr">Ürünlerimiz</h2>
+        <h2 class="section-title lang-de hidden">Unsere Produkte</h2>
+        <p class="section-sub lang-tr">Doğadan gelen, katkısız ve geleneksel yöntemlerle hazırlanan lezzetler.</p>
+        <p class="section-sub lang-de hidden">Naturbelassene Köstlichkeiten, nach traditionellen Methoden hergestellt.</p>
 
         <div class="grid">
           <article class="card">
             <img src="images/flower.svg" alt="Çiçek Balı" loading="lazy" width="600" height="400" />
-            <h3 class="lang-tr">Çiçek Balı</h3>
-            <p class="lang-tr">Doğal çiçek balı — çeşitli mevsim çiçeklerinden elde edilir. Tat, aroma ve akışkanlık seçenekleri mevcuttur.</p>
+            <div class="card-body">
+              <h3 class="lang-tr">Çiçek Balı</h3>
+              <h3 class="lang-de hidden">Blütenhonig</h3>
+              <p class="lang-tr">Doğal çiçek balı — çeşitli mevsim çiçeklerinden elde edilir. Tat, aroma ve akışkanlık seçenekleri mevcuttur.</p>
+              <p class="lang-de hidden">Natürlicher Blütenhonig aus verschiedenen Saisonblüten. Erhältlich in unterschiedlichen Geschmacksrichtungen und Konsistenzen.</p>
+            </div>
           </article>
 
           <article class="card">
             <img src="images/thyme.svg" alt="Kekik Balı" loading="lazy" width="600" height="400" />
-            <h3 class="lang-tr">Kekik Balı</h3>
-            <p class="lang-tr">Aroması güçlü, yöresel kekik balı. Özellikle kahvaltılık ve şifa amaçlı tercih edilir.</p>
+            <div class="card-body">
+              <h3 class="lang-tr">Kekik Balı</h3>
+              <h3 class="lang-de hidden">Thymianhonig</h3>
+              <p class="lang-tr">Aroması güçlü, yöresel kekik balı. Özellikle kahvaltılık ve şifa amaçlı tercih edilir.</p>
+              <p class="lang-de hidden">Regionaler Thymianhonig mit kräftigem Aroma — beliebt zum Frühstück und für seine wohltuende Wirkung.</p>
+            </div>
           </article>
 
           <article class="card">
             <img src="images/honeycomb.svg" alt="Petek Balı" loading="lazy" width="600" height="400" />
-            <h3 class="lang-tr">Petek Balı</h3>
-            <p class="lang-tr">Doğal petek bal; balmumu içinde sunulur. Tağşişsizlik ve doğallığa önem veriyoruz.</p>
+            <div class="card-body">
+              <h3 class="lang-tr">Petek Balı</h3>
+              <h3 class="lang-de hidden">Wabenhonig</h3>
+              <p class="lang-tr">Doğal petek bal; balmumu içinde sunulur. Tağşişsizlik ve doğallığa önem veriyoruz.</p>
+              <p class="lang-de hidden">Natürlicher Wabenhonig direkt in der Wachswabe. Wir legen Wert auf Reinheit und Natürlichkeit.</p>
+            </div>
           </article>
 
           <article class="card">
             <img src="images/nuts.svg" alt="Kuruyemiş" loading="lazy" width="600" height="400" />
-            <h3 class="lang-tr">Kuruyemiş</h3>
-            <p class="lang-tr">Çiğ/dövülmüş badem, fındık, Antep fıstığı ve karışım paketleri. Toptan ve paket satış.</p>
+            <div class="card-body">
+              <h3 class="lang-tr">Kuruyemiş</h3>
+              <h3 class="lang-de hidden">Nüsse</h3>
+              <p class="lang-tr">Çiğ/dövülmüş badem, fındık, Antep fıstığı ve karışım paketleri. Toptan ve paket satış.</p>
+              <p class="lang-de hidden">Rohe/gehackte Mandeln, Haselnüsse, Pistazien und Mischpackungen. Groß- und Einzelhandel.</p>
+            </div>
           </article>
 
           <article class="card">
             <img src="images/lokum.svg" alt="Lokum" loading="lazy" width="600" height="400" />
-            <h3 class="lang-tr">Lokum</h3>
-            <p class="lang-tr">Geleneksel Türk lokumu — gül, fıstık, badem gibi çeşitler.</p>
+            <div class="card-body">
+              <h3 class="lang-tr">Lokum</h3>
+              <h3 class="lang-de hidden">Türkischer Honig (Lokum)</h3>
+              <p class="lang-tr">Geleneksel Türk lokumu — gül, fıstık, badem gibi çeşitler.</p>
+              <p class="lang-de hidden">Traditionelles türkisches Lokum — Sorten wie Rose, Pistazie und Mandel.</p>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="ordering">
-        <h2 class="section-title">Siparişlendirme & Gönderim</h2>
-        <p>Almanya içi gönderimler sağlanır. Ürünlerimiz hem paket hem de toptan gönderime uygundur. Fiyat teklifi için lütfen miktarı ve tercih edilen ürünleri belirtin.</p>
+      <section id="ordering" class="section-block">
+        <h2 class="section-title lang-tr">Siparişlendirme & Gönderim</h2>
+        <h2 class="section-title lang-de hidden">Bestellung & Versand</h2>
+        <div class="info-card">
+          <p class="lang-tr">Almanya içi gönderimler sağlanır. Ürünlerimiz hem paket hem de toptan gönderime uygundur. Fiyat teklifi için lütfen miktarı ve tercih edilen ürünleri belirtin.</p>
+          <p class="lang-de hidden">Lieferung innerhalb Deutschlands. Unsere Produkte eignen sich sowohl für den Einzel- als auch für den Großhandel. Für ein Angebot geben Sie bitte Menge und gewünschte Produkte an.</p>
+
+          <div class="steps">
+            <div class="step">
+              <span class="num">1</span>
+              <h4 class="lang-tr">Ürün Seçimi</h4>
+              <h4 class="lang-de hidden">Produktauswahl</h4>
+              <p class="lang-tr">İstediğiniz ürün ve miktarı belirtin.</p>
+              <p class="lang-de hidden">Wählen Sie Produkt und Menge aus.</p>
+            </div>
+            <div class="step">
+              <span class="num">2</span>
+              <h4 class="lang-tr">Teklif</h4>
+              <h4 class="lang-de hidden">Angebot</h4>
+              <p class="lang-tr">Size uygun fiyat teklifini iletiriz.</p>
+              <p class="lang-de hidden">Wir senden Ihnen ein passendes Angebot.</p>
+            </div>
+            <div class="step">
+              <span class="num">3</span>
+              <h4 class="lang-tr">Gönderim</h4>
+              <h4 class="lang-de hidden">Versand</h4>
+              <p class="lang-tr">Siparişiniz hızlıca hazırlanıp gönderilir.</p>
+              <p class="lang-de hidden">Ihre Bestellung wird schnell versendet.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="contact">
-        <h2 class="section-title">İletişim</h2>
-        <p>E-posta: <a href="mailto:info@dogadanalmanya.de">info@dogadanalmanya.de</a></p>
-        <p>Telefon / WhatsApp: +49 170 000 0000 (örnek)</p>
+      <section id="contact" class="section-block">
+        <h2 class="section-title lang-tr">İletişim</h2>
+        <h2 class="section-title lang-de hidden">Kontakt</h2>
+        <div class="contact-grid">
+          <p>📧 <a href="mailto:info@dogadanalmanya.de">info@dogadanalmanya.de</a></p>
+          <p class="lang-tr">📱 Telefon / WhatsApp: +49 170 000 0000 (örnek)</p>
+          <p class="lang-de hidden">📱 Telefon / WhatsApp: +49 170 000 0000 (Beispiel)</p>
+        </div>
       </section>
     </main>
 
